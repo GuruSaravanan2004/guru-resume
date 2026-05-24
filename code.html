@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Guru Saravanan M | AI &amp; Full Stack Developer</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error-container": "#ffdad6",
+                        "secondary": "#5c5f60",
+                        "on-secondary": "#ffffff",
+                        "on-surface-variant": "#434654",
+                        "secondary-container": "#dee0e2",
+                        "background": "#faf9ff",
+                        "on-primary-fixed": "#001848",
+                        "inverse-surface": "#1d3054",
+                        "surface-container-highest": "#d8e2ff",
+                        "surface-dim": "#ccdaff",
+                        "tertiary-fixed-dim": "#ffb59b",
+                        "on-surface": "#051a3e",
+                        "on-primary-fixed-variant": "#0040a2",
+                        "error": "#ba1a1a",
+                        "on-secondary-container": "#606365",
+                        "primary-fixed": "#dae2ff",
+                        "on-background": "#051a3e",
+                        "tertiary": "#7b2600",
+                        "on-tertiary": "#ffffff",
+                        "outline": "#737685",
+                        "on-primary-container": "#c4d2ff",
+                        "on-error-container": "#93000a",
+                        "surface-container-lowest": "#ffffff",
+                        "outline-variant": "#c3c6d6",
+                        "surface-container-low": "#f1f3ff",
+                        "primary-fixed-dim": "#b2c5ff",
+                        "surface": "#faf9ff",
+                        "secondary-fixed-dim": "#c5c6c8",
+                        "on-tertiary-fixed-variant": "#812800",
+                        "surface-variant": "#d8e2ff",
+                        "secondary-fixed": "#e1e2e4",
+                        "on-tertiary-fixed": "#380d00",
+                        "on-tertiary-container": "#ffc6b2",
+                        "primary": "#0052cc",
+                        "surface-tint": "#0c56d0",
+                        "inverse-on-surface": "#edf0ff",
+                        "surface-bright": "#faf9ff",
+                        "on-error": "#ffffff",
+                        "inverse-primary": "#b2c5ff",
+                        "on-secondary-fixed-variant": "#444749",
+                        "on-secondary-fixed": "#191c1e",
+                        "primary-container": "#0052cc",
+                        "tertiary-container": "#a33500",
+                        "on-primary": "#ffffff",
+                        "surface-container-high": "#e1e8ff",
+                        "surface-container": "#e9edff",
+                        "tertiary-fixed": "#ffdbcf"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "container-max": "1200px",
+                        "unit": "8px",
+                        "margin-desktop": "64px",
+                        "margin-mobile": "24px",
+                        "gutter": "24px",
+                        "section-gap": "120px"
+                    },
+                    "fontFamily": {
+                        "display": ["Inter", "sans-serif"],
+                        "headline-lg": ["Inter", "sans-serif"],
+                        "headline-md": ["Inter", "sans-serif"],
+                        "label-sm": ["Inter", "sans-serif"],
+                        "label-md": ["Inter", "sans-serif"],
+                        "body-md": ["Inter", "sans-serif"],
+                        "body-lg": ["Inter", "sans-serif"]
+                    },
+                    "fontSize": {
+                        "display": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "600" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body class="bg-surface text-on-surface font-body-md antialiased">
+    <!-- TopNavBar -->
+    <header class="fixed top-0 w-full bg-surface z-50 border-b border-outline-variant">
+        <nav
+            class="flex justify-between items-center max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop h-20">
+            <span class="font-headline-md text-headline-md font-bold text-primary">Portfolio</span>
+            <div class="hidden md:flex gap-8 items-center">
+                <a class="text-primary font-bold border-b-2 border-primary pb-1 font-body-md" href="#home">Home</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md"
+                    href="#about">About</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md"
+                    href="#skills">Skills</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md"
+                    href="#projects">Projects</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md"
+                    href="#experience">Experience</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md"
+                    href="#contact">Contact</a>
+                <a class="bg-primary text-on-primary px-6 py-2 rounded font-label-md hover:opacity-90 transition-opacity"
+                    target="_blank" href="image/resume.jpg">Resume</a>
+            </div>
+            <button class="md:hidden text-primary" onclick="toggleMenu()">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </nav>
+    </header>
+    <main class="mt-20">
+        <!-- Hero Section -->
+        <section
+            class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop py-section-gap flex flex-col md:flex-row items-center gap-gutter"
+            id="home">
+            <div class="flex-1 space-y-6">
+                <p class="text-primary font-label-md tracking-widest uppercase">Available for work</p>
+                <h1 class="font-display text-display text-on-surface">AI Enthusiast | Full Stack Developer</h1>
+                <p class="text-body-lg text-secondary max-w-xl">
+                    I am Guru Saravanan M, a passionate developer bridging the gap between artificial intelligence and
+                    seamless user experiences. Specializing in building scalable applications with precision.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a class="bg-primary text-on-primary px-8 py-4 rounded font-label-md hover:shadow-md transition-all"
+                        href="#projects">View Projects</a>
+                    <a class="border border-primary text-primary px-8 py-4 rounded font-label-md hover:bg-primary-container hover:text-on-primary-container transition-all"
+                        href="#contact">Contact Me</a>
+                </div>
+            </div>
+            <div class="flex-1 relative">
+                <div
+                    class="aspect-square max-w-md mx-auto overflow-hidden border border-outline-variant bg-surface-container-low">
+                    <img alt="Guru Saravanan M"
+                        class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                        data-alt="A professional studio portrait of a young South Asian male software developer with a friendly and confident expression. He is wearing a minimalist navy blue polo shirt against a clean, light gray background. The lighting is soft and even, highlighting a modern, corporate aesthetic suitable for a high-end professional portfolio. The overall mood is dependable and technically proficient."
+                        src="image/guru.png" />
+                </div>
+            </div>
+        </section>
+        <!-- About Section (Bento Style) -->
+        <section class="bg-surface-container-low py-section-gap" id="about">
+            <div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+                    <div class="md:col-span-2 bg-surface-container-lowest p-10 border border-outline-variant">
+                        <h2 class="font-headline-lg text-headline-lg mb-6">About Me</h2>
+                        <p class="text-body-md text-secondary leading-relaxed">
+                            Currently pursuing B.Tech in AI &amp; Data Science, I focus on creating intelligent systems
+                            that solve real-world problems. My journey involves deep diving into machine learning
+                            algorithms while mastering the art of full-stack engineering. I believe in the power of data
+                            to drive innovation and the importance of clean, maintainable code.
+                        </p>
+                    </div>
+                    <div class="bg-primary p-10 flex flex-col justify-center text-on-primary">
+                        <h3 class="font-headline-md text-headline-md mb-2">B.Tech</h3>
+                        <p class="font-label-md opacity-80 uppercase mb-4">Current Education</p>
+                        <p class="text-body-md">AI &amp; Data Science Specialist</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Technical Expertise -->
+        <section class="py-section-gap max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop" id="skills">
+            <div class="flex flex-col md:flex-row gap-gutter">
+                <div class="w-full md:w-1/3">
+                    <h2 class="font-headline-lg text-headline-lg sticky top-32">Technical Expertise</h2>
+                </div>
+                <div class="w-full md:w-2/3 grid grid-cols-2 gap-8">
+                    <div class="space-y-4">
+                        <h4 class="font-headline-md text-primary">Languages</h4>
+                        <ul class="space-y-2 text-secondary">
+                            <li class="flex items-center gap-2"><span class="w-2 h-2 bg-primary rounded-full"></span>
+                                Python</li>
+                            <li class="flex items-center gap-2"><span class="w-2 h-2 bg-primary rounded-full"></span>
+                                JavaScript</li>
+                            <li class="flex items-center gap-2"><span class="w-2 h-2 bg-primary rounded-full"></span>
+                                SQL &amp; NoSQL</li>
+                        </ul>
+                    </div>
+                    <div class="space-y-4">
+                        <h4 class="font-headline-md text-primary">Frameworks</h4>
+                        <ul class="space-y-2 text-secondary">
+                            <li class="flex items-center gap-2"><span class="w-2 h-2 bg-primary rounded-full"></span>
+                                React.js</li>
+                            <li class="flex items-center gap-2"><span class="w-2 h-2 bg-primary rounded-full"></span>
+                                Node.js</li>
+                            <li class="flex items-center gap-2"><span class="w-2 h-2 bg-primary rounded-full"></span>
+                                TensorFlow</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- Selected Projects -->
+        <section class="bg-surface-container-low py-section-gap" id="projects">
+            <div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop">
+                <h2 class="font-headline-lg text-headline-lg mb-12">Selected Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+                    <!-- Project 1 -->
+                    <div
+                        class="bg-surface border border-outline-variant group hover:border-primary transition-all duration-300">
+                        <div class="h-64 bg-surface-container-high overflow-hidden">
+                            <img alt="Innovators Music Hub"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="A clean, high-resolution screenshot of a code editor showing a complex Python-based AI model on a dark IDE interface. Beside the laptop, there are abstract floating 3D data nodes and translucent blue connection lines, symbolizing neural networks. The background is a bright, minimalist office setting in daylight, using a soft color palette of white and blue to match a professional developer's portfolio aesthetic."
+                                src="image/music.png" />
+                        </div>
+                        <div class="p-8 space-y-4">
+                            <div class="flex gap-2">
+                                <span
+                                    class="bg-secondary-container text-secondary font-label-sm px-2 py-1 rounded">HTML</span>
+                                <span
+                                    class="bg-secondary-container text-secondary font-label-sm px-2 py-1 rounded">Node.js</span>
+                            </div>
+                            <h3 class="font-headline-md">Innovators Music Hub</h3>
+                            <p class="text-body-md text-secondary">Implemented secure user authentication and real-time
+                                song data management using Firebase services.</p>
+
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div
+                        class="bg-surface border border-outline-variant group hover:border-primary transition-all duration-300">
+                        <div class="h-64 bg-surface-container-high overflow-hidden">
+                            <img alt="React Dashboard"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="A sleek, modern web application dashboard interface displayed on a tablet. The UI features clean white backgrounds, sharp blue charts, and a minimalist sidebar navigation. The lighting is bright and airy, reflecting a professional software development environment. The image uses a high-contrast white and corporate blue palette, maintaining a sense of precision and modern web design quality."
+                                src="image/civic.jpg" />
+                        </div>
+                        <div class="p-8 space-y-4">
+                            <div class="flex gap-2">
+                                <span
+                                    class="bg-secondary-container text-secondary font-label-sm px-2 py-1 rounded">Tailwind
+                                    css</span>
+                                <span
+                                    class="bg-secondary-container text-secondary font-label-sm px-2 py-1 rounded">Supabase</span>
+                            </div>
+                            <h3 class="font-headline-md">Civic Connect </h3>
+                            <p class="text-body-md text-secondary">Civic Connect is a digital platform that allows
+                                citizens to report local civic issues such as potholes,
+                                garbage, or water problems directly to the concerned authorities.</p>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div
+                        class="bg-surface border border-outline-variant group hover:border-primary transition-all duration-300">
+                        <div class="h-64 bg-surface-container-high overflow-hidden">
+                            <img alt="IoT Dashboard"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="A macro photography shot of an advanced IoT microcontroller board with glowing blue LEDs and intricate circuit patterns. The scene is set in a sterile, modern laboratory with bright lighting and soft white surfaces. The aesthetic is clean and high-tech, focusing on engineering precision and hardware-software integration, using a primary blue and white color scheme to maintain portfolio consistency."
+                                src="image/sign.jpg" />
+                        </div>
+                        <div class="p-8 space-y-4">
+                            <div class="flex gap-2">
+                                <span
+                                    class="bg-secondary-container text-secondary font-label-sm px-2 py-1 rounded">ML</span>
+                                <span
+                                    class="bg-secondary-container text-secondary font-label-sm px-2 py-1 rounded">LSTM</span>
+                            </div>
+                            <h3 class="font-headline-md">Sign Language to Text Conversion </h3>
+                            <p class="text-body-md text-secondary">This project captures hand gestures using a webcam
+                                and converts them into text using an LSTM-based
+                                deep learning model.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Experience Section -->
+        <section class="py-section-gap max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop" id="experience">
+            <h2 class="font-headline-lg text-headline-lg mb-12">Professional Journey</h2>
+            <div class="space-y-12">
+                <div class="flex flex-col md:flex-row gap-gutter border-l-4 border-primary pl-8 py-4">
+                    <div class="md:w-1/4">
+                        <span class="font-label-md text-primary">2026</span>
+                        <h4 class="font-headline-md mt-2">Eagle HiTech Softclou</h4>
+                    </div>
+                    <div class="md:w-3/4">
+                        <h4 class="font-headline-md">AI Engineer</h4>
+                        <p class="text-body-md text-secondary mt-2">
+                            AI Intern at Eagle-HiTech Softclou Pvt Ltd, gaining hands-on experience in Artificial
+                            Intelligence, Machine Learning, and real-world software development. Passionate about
+                            building innovative AI-driven solutions while enhancing practical skills in modern
+                            technologies and problem-solving.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row gap-gutter border-l-4 border-outline-variant pl-8 py-4">
+                    <div class="md:w-1/4">
+                        <span class="font-label-md text-secondary">2025</span>
+                        <h4 class="font-headline-md mt-2">MSME</h4>
+                    </div>
+                    <div class="md:w-3/4">
+                        <h4 class="font-headline-md">IoT &amp; Entrepreneurship Trainee</h4>
+                        <p class="text-body-md text-secondary mt-2">
+                            Developing innovative IoT solutions for small to medium enterprises. Lead the design of a
+                            smart monitoring prototype that reduced downtime by 15%. Collaborating with cross-functional
+                            teams to integrate hardware with cloud dashboards.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Form -->
+        <section class="bg-surface-container-lowest py-section-gap border-t border-outline-variant" id="contact">
+            <div
+                class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-2 gap-24">
+                <div class="space-y-6">
+                    <h2 class="font-display text-display text-on-surface">Let's Connect</h2>
+                    <p class="text-body-lg text-secondary">I'm always open to discussing new projects, creative ideas or
+                        opportunities to be part of your vision.</p>
+                    <div class="space-y-4 pt-4">
+                        <div class="flex items-center gap-4">
+                            <span class="material-symbols-outlined text-primary">mail</span>
+                            <a href="mailto:gurusaravanan.m2004@gmail.com"
+                                class="font-body-md hover:text-primary transition-colors">gurusaravanan.m2004@gmail.com</a>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <span class="material-symbols-outlined text-primary">location_on</span>
+                            <span class="font-body-md">Chennai, Tamil Nadu, India</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="space-y-6">
+                    <div>
+                        <label class="block font-label-md text-on-surface-variant mb-2">Full Name</label>
+                        <input
+                            class="w-full bg-surface border-outline-variant focus:border-primary focus:ring-0 rounded p-4 transition-all"
+                            placeholder="John Doe" type="text" />
+                    </div>
+                    <div>
+                        <label class="block font-label-md text-on-surface-variant mb-2">Email Address</label>
+                        <input
+                            class="w-full bg-surface border-outline-variant focus:border-primary focus:ring-0 rounded p-4 transition-all"
+                            placeholder="john@example.com" type="email" />
+                    </div>
+                    <div>
+                        <label class="block font-label-md text-on-surface-variant mb-2">Message</label>
+                        <textarea
+                            class="w-full bg-surface border-outline-variant focus:border-primary focus:ring-0 rounded p-4 transition-all"
+                            placeholder="How can I help you?" rows="4"></textarea>
+                    </div>
+                    <button
+                        class="w-full bg-primary text-on-primary font-label-md py-4 hover:opacity-90 transition-opacity"
+                        type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-surface-container-low border-t border-outline-variant">
+        <div
+            class="flex flex-col md:flex-row justify-between items-center max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop py-12 gap-gutter">
+            <span class="font-headline-sm text-headline-sm font-bold text-on-surface">Portfolio</span>
+            <p class="text-secondary font-label-md">© 2024 AI &amp; Full Stack Developer. Built with precision.</p>
+            <div class="flex gap-6">
+                <a class="text-secondary hover:text-primary transition-colors font-label-md" target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.linkedin.com/in/guru-saravanan-64a6192a4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>
+                <a class="text-secondary hover:text-primary transition-colors font-label-md" target="_blank"
+                    rel="noopener noreferrer" href="https://github.com/GuruSaravanan2004">GitHub</a>
+                <a class="text-secondary hover:text-primary transition-colors font-label-md"
+                    href="mailto:gurusaravanan.m2004@gmail.com">Email</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+            // Implementation for mobile menu toggle if needed
+            console.log("Toggle menu");
+        }
+
+        // Smooth scroll implementation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
